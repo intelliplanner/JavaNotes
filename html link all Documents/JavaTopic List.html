@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>Java Topics</title>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+ 
+      
+   <style>
+         .ui-widget-header,.ui-state-default, ui-button {
+            background:#b9cd6d;
+            border: 1px solid #b9cd6d;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+      </style>
+ <script>
+         $(function() {
+            $( "#dialog" ).dialog({
+               autoOpen: false, 
+               modal: true,
+               buttons: {
+                  OK: function() {$(this).dialog("close");}
+               },
+            });
+            $( "#button1" ).click(function() {
+               $( "#div1" ).load("test2.html").dialog( "open" );
+            });
+         });
+      </script>
+  
+</head>
+ <body>
+<h1>Java Topics</h1></a>
+<button type="button" class="btn btn-primary" id = "button1">Java Basics</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-link">Link</button>
+<div id="div1" title="Basic dialog">
+  <p></p>
+</div>
+ 
+</body>
+</html>
+
